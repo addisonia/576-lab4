@@ -74,25 +74,25 @@ require([
     position: "top-left",
   });
 
-  // Create and add the Search widget
-  const searchWidget = new Search({
-    view: view,
-    allPlaceholder: "Search for address or place",
-    includeDefaultSources: false,
-    sources: [
-      {
-        name: "ArcGIS World Geocoding Service",
-        placeholder: "Search ArcGIS World Geocoding Service",
-        apiKey: esriConfig.apiKey,
-        singleLineFieldName: "SingleLine",
-        locator:
-          "https://geocode-api.arcgis.com/arcgis/rest/services/World/GeocodeServer",
-      },
-    ],
-  });
+//   // Create and add the Search widget
+//   const searchWidget = new Search({
+//     view: view,
+//     allPlaceholder: "Search for address or place",
+//     includeDefaultSources: false,
+//     sources: [
+//       {
+//         name: "ArcGIS World Geocoding Service",
+//         placeholder: "Search ArcGIS World Geocoding Service",
+//         apiKey: esriConfig.apiKey,
+//         singleLineFieldName: "SingleLine",
+//         locator:
+//           "https://geocode-api.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+//       },
+//     ],
+//   });
 
-  // Add the search widget to the top right corner of the view
-  view.ui.add(searchWidget, {
-    position: "top-right",
-  });
+//   // Add the search widget to the top right corner of the view
+//   view.ui.add(searchWidget, {
+//     position: "top-right",
+//   });
 });
